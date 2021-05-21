@@ -1,0 +1,4 @@
+rootProject.name = "Repo-Example"
+include ':app'
+include ':test-module-ui'
+include ':test-module-core'
