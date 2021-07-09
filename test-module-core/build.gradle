@@ -1,6 +1,15 @@
 plugins {
     id 'com.android.library'
+    id 'maven'
+    id 'signing'
 }
+ext {
+    // Provide your own coordinates here
+    PUBLISH_GROUP_ID = 'com.repo-example'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'repo-example-core'
+}
+apply from: "${rootProject.projectDir}/scripts/publish-module-core.gradle"
 
 android {
     compileSdkVersion 30
